@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda de Citas</title>
+  <link rel="stylesheet" href="style/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- HEADER con logo y título -->
+  <header>
+     <img src="assets/logo.jpg" alt="Logo" class="logo">
+    <h1>Agenda de Citas</h1>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre completo" required>
+    <input type="date" id="fecha" required>
+    <input type="time" id="hora" required>
+    <textarea id="motivo" placeholder="Motivo de la cita" required></textarea>
+    <button type="submit">Agendar Cita</button>
+  </form>
+
+  <h2>Citas Programadas</h2>
+  <ul id="lista-citas"></ul>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
